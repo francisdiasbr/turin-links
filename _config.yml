@@ -1,2 +1,12 @@
 include: [".well-known"]
 baseurl: "/turin-links"
+
+defaults:
+  - scope:
+      path: ".well-known/apple-app-site-association"
+    values:
+      layout: null
+      content_type: "application/json"
+
+# Força o GitHub Pages a não processar o arquivo
+keep_files: [".well-known"]
