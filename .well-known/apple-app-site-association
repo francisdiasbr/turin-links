@@ -3,12 +3,14 @@
     "apps": [],
     "details": [{
       "appID": "9H656NNH93.br.com.roteiroturin.TurinApp",
-      "paths": ["/turin-links/place/*"],
+      "paths": [
+        "/turin-links/place/*",
+        "/turin-links/*"
+      ],
       "components": [{
         "/": "/turin-links/place/*",
         "comment": "Matches any URL with path /turin-links/place/"
-      }],
-      "appIDs": ["9H656NNH93.br.com.roteiroturin.TurinApp"]
+      }]
     }]
   },
   "webcredentials": {
