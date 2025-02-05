@@ -3,7 +3,7 @@
     "apps": [],
     "details": [{
       "appID": "9H656NNH93.br.com.roteiroturin.TurinApp",
-      "paths": ["/place/*"]
+      "paths": ["/turin-links/place/*"]
     }]
   }
 }
