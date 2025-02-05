@@ -9,14 +9,24 @@
     <meta property="al:ios:app_name" content="Turin App">
 </head>
 <body>
+    <h1>Redirecionando para o Turin App...</h1>
+    <p>Se você não for redirecionado automaticamente, <a href="https://apps.apple.com/br/app/turin-app/id6479428113">clique aqui para abrir na App Store</a>.</p>
+    
     <script>
-        // Mantém a URL HTTPS original
-        // O Universal Links cuidará do redirecionamento para o app
+        // Captura o ID do place da URL
+        const pathParts = window.location.pathname.split('/');
+        const placeId = pathParts[pathParts.length - 1];
         
-        // Se o app não estiver instalado, redireciona para a App Store após um delay
+        // Adiciona o ID do place nas meta tags
+        const metaUrl = document.querySelector('meta[property="al:ios:url"]');
+        if (metaUrl) {
+            metaUrl.content = `https://francisdiasbr.github.io/turin-links/place/${placeId}`;
+        }
+        
+        // Redireciona para a App Store após um delay
         setTimeout(function() {
             window.location.href = 'https://apps.apple.com/br/app/turin-app/id6479428113';
-        }, 1000);
+        }, 1500);
     </script>
 </body>
 </html>
